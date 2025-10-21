@@ -36,7 +36,7 @@
     </visual>
   </link>
   <link
-    name="LINK_HIP_PITCH_L">
+    name="left_hip_pitch_link">
     <inertial>
       <origin
         xyz="-0.0002 0.0495 -0.0399"
@@ -57,7 +57,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//LINK_HIP_PITCH_L.STL" />
+          filename="package://magicbot-z1_description/meshes//left_hip_pitch_link.STL" />
       </geometry>
       <material
         name="">
@@ -71,12 +71,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//LINK_HIP_PITCH_L.STL" />
+          filename="package://magicbot-z1_description/meshes//left_hip_pitch_link.STL" />
       </geometry>
     </collision> -->
   </link>
   <joint
-    name="JOINT_HIP_PITCH_L"
+    name="left_hip_pitch_joint"
     type="revolute">
     <origin
       xyz="0 0.06875 0"
@@ -84,7 +84,7 @@
     <parent
       link="pelvis" />
     <child
-      link="LINK_HIP_PITCH_L" />
+      link="left_hip_pitch_link" />
     <axis
       xyz="0 1 0" />
     <limit
@@ -94,7 +94,7 @@
       velocity="20" />
   </joint>
   <link
-    name="LINK_HIP_ROLL_L">
+    name="left_hip_roll_link">
     <inertial>
       <origin
         xyz="0.0066 -0.0001 -0.0869"
@@ -115,7 +115,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//LINK_HIP_ROLL_L.STL" />
+          filename="package://magicbot-z1_description/meshes//left_hip_roll_link.STL" />
       </geometry>
       <material
         name="">
@@ -129,20 +129,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//LINK_HIP_ROLL_L.STL" />
+          filename="package://magicbot-z1_description/meshes//left_hip_roll_link.STL" />
       </geometry>
     </collision> -->
   </link>
   <joint
-    name="JOINT_HIP_ROLL_L"
+    name="left_hip_roll_joint"
     type="revolute">
     <origin
       xyz="0 0.053724 -0.045579"
       rpy="0 0 0" />
     <parent
-      link="LINK_HIP_PITCH_L" />
+      link="left_hip_pitch_link" />
     <child
-      link="LINK_HIP_ROLL_L" />
+      link="left_hip_roll_link" />
     <axis
       xyz="1 0 0" />
     <limit
@@ -152,7 +152,7 @@
       velocity="20" />
   </joint>
   <link
-    name="LINK_HIP_YAW_L">
+    name="left_hip_yaw_link">
     <inertial>
       <origin
         xyz="-0.0188 -0.0041 -0.0763"
@@ -173,7 +173,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//LINK_HIP_YAW_L.STL" />
+          filename="package://magicbot-z1_description/meshes//left_hip_yaw_link.STL" />
       </geometry>
       <material
         name="">
@@ -187,20 +187,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//LINK_HIP_YAW_L.STL" />
+          filename="package://magicbot-z1_description/meshes//left_hip_yaw_link.STL" />
       </geometry>
     </collision> -->
   </link>
   <joint
-    name="JOINT_HIP_YAW_L"
+    name="left_hip_yaw_joint"
     type="revolute">
     <origin
       xyz="-0.00084052 0 -0.1255"
       rpy="0 0 0" />
     <parent
-      link="LINK_HIP_ROLL_L" />
+      link="left_hip_roll_link" />
     <child
-      link="LINK_HIP_YAW_L" />
+      link="left_hip_yaw_link" />
     <axis
       xyz="0 0 1" />
     <limit
@@ -210,7 +210,7 @@
       velocity="20" />
   </joint>
   <link
-    name="LINK_KNEE_PITCH_L">
+    name="left_knee_link">
     <inertial>
       <origin
         xyz="0.0009 -0.0007 -0.101"
@@ -231,7 +231,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//LINK_KNEE_PITCH_L.STL" />
+          filename="package://magicbot-z1_description/meshes//left_knee_link.STL" />
       </geometry>
       <material
         name="">
@@ -245,20 +245,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//LINK_KNEE_PITCH_L.STL" />
+          filename="package://magicbot-z1_description/meshes//left_knee_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="JOINT_KNEE_PITCH_L"
+    name="left_knee_joint"
     type="revolute">
     <origin
       xyz="-0.052111 0 -0.13729"
       rpy="0 0 0" />
     <parent
-      link="LINK_HIP_YAW_L" />
+      link="left_hip_yaw_link" />
     <child
-      link="LINK_KNEE_PITCH_L" />
+      link="left_knee_link" />
     <axis
       xyz="0 1 0" />
     <limit
@@ -268,7 +268,7 @@
       velocity="20" />
   </joint>
   <link
-    name="LINK_ANKLE_PITCH_L">
+    name="left_ankle_pitch_link">
     <inertial>
       <origin
         xyz="0.00094063 5.0401E-07 -0.0083154"
@@ -289,7 +289,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//LINK_ANKLE_PITCH_L.STL" />
+          filename="package://magicbot-z1_description/meshes//left_ankle_pitch_link.STL" />
       </geometry>
       <material
         name="">
@@ -303,20 +303,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//LINK_ANKLE_PITCH_L.STL" />
+          filename="package://magicbot-z1_description/meshes//left_ankle_pitch_link.STL" />
       </geometry>
     </collision> -->
   </link>
   <joint
-    name="JOINT_ANKLE_PITCH_L"
+    name="left_ankle_pitch_joint"
     type="revolute">
     <origin
       xyz="0 0 -0.34"
       rpy="0 0 0" />
     <parent
-      link="LINK_KNEE_PITCH_L" />
+      link="left_knee_link" />
     <child
-      link="LINK_ANKLE_PITCH_L" />
+      link="left_ankle_pitch_link" />
     <axis
       xyz="0 1 0" />
     <limit
@@ -326,7 +326,7 @@
       velocity="15" />
   </joint>
   <link
-    name="LINK_ANKLE_ROLL_L">
+    name="left_ankle_roll_link">
     <inertial>
       <origin
         xyz="0.041316 0.00048241 -0.031752"
@@ -347,7 +347,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//LINK_ANKLE_ROLL_L.STL" />
+          filename="package://magicbot-z1_description/meshes//left_ankle_roll_link.STL" />
       </geometry>
       <material
         name="">
@@ -361,7 +361,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//LINK_ANKLE_ROLL_L.STL" />
+          filename="package://magicbot-z1_description/meshes//left_ankle_roll_link.STL" />
       </geometry>
     </collision> -->
     <collision>
@@ -374,15 +374,15 @@
     </collision>
   </link>
   <joint
-    name="JOINT_ANKLE_ROLL_L"
+    name="left_ankle_roll_joint"
     type="revolute">
     <origin
       xyz="0 0 -0.018"
       rpy="0 0 0" />
     <parent
-      link="LINK_ANKLE_PITCH_L" />
+      link="left_ankle_pitch_link" />
     <child
-      link="LINK_ANKLE_ROLL_L" />
+      link="left_ankle_roll_link" />
     <axis
       xyz="1 0 0" />
     <limit
@@ -392,30 +392,30 @@
       velocity="15" />
   </joint>
 
-  <link name="LINK_FOOT_L">
+  <link name="left_foot_link">
     <inertial>
       <origin xyz="0.000000 0.000000 0.000000" rpy="0 0 0" />
       <mass value="1e-12" />
       <inertia ixx="1e-12" ixy="0.000000" ixz="0.000000" iyy="1e-12" iyz="0.000000" izz="1e-12" />
     </inertial>
   </link>
-  <joint name="J_FOOT_L" type="fixed">
+  <joint name="left_foot_joint" type="fixed">
     <origin xyz="-0. 0.000000 -0.0447600" rpy="0 0 0" />
-    <parent link="LINK_ANKLE_ROLL_L" />
-    <child link="LINK_FOOT_L" />
+    <parent link="left_ankle_roll_link" />
+    <child link="left_foot_link" />
     <axis xyz="0 0 1" />
   </joint>
-  <link name="LINK_TOE_L">
+  <link name="left_toe_link">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <mass value="1e-12" />
       <inertia ixx="1e-12" ixy="0" ixz="0" iyy="1e-12" iyz="0" izz="1e-12" />
     </inertial>
   </link>
-  <joint name="JOINT_TOE_L" type="fixed" dont_collapse="true">
+  <joint name="left_toe_joint" type="fixed" dont_collapse="true">
     <origin xyz="0.152 0 0" rpy="0 0 0" />
-    <parent link="LINK_FOOT_L" />
-    <child link="LINK_TOE_L" />
+    <parent link="left_foot_link" />
+    <child link="left_toe_link" />
     <axis xyz="0 1 0" />
   </joint>
 
@@ -423,7 +423,7 @@
   <!-- ###########################  r_leg ################################-->  
   <!-- ###################################################################-->  
   <link
-    name="LINK_HIP_PITCH_R">
+    name="right_hip_pitch_link">
     <inertial>
       <origin
         xyz="-0.0002 -0.0492 -0.0399"
@@ -444,7 +444,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//LINK_HIP_PITCH_R.STL" />
+          filename="package://magicbot-z1_description/meshes//right_hip_pitch_link.STL" />
       </geometry>
       <material
         name="">
@@ -458,12 +458,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//LINK_HIP_PITCH_R.STL" />
+          filename="package://magicbot-z1_description/meshes//right_hip_pitch_link.STL" />
       </geometry>
     </collision> -->
   </link>
   <joint
-    name="JOINT_HIP_PITCH_R"
+    name="right_hip_pitch_joint"
     type="revolute">
     <origin
       xyz="0 -0.06875 0"
@@ -471,7 +471,7 @@
     <parent
       link="pelvis" />
     <child
-      link="LINK_HIP_PITCH_R" />
+      link="right_hip_pitch_link" />
     <axis
       xyz="0 1 0" />
     <limit
@@ -481,7 +481,7 @@
       velocity="20" />
   </joint>
   <link
-    name="LINK_HIP_ROLL_R">
+    name="right_hip_roll_link">
     <inertial>
       <origin
         xyz="0.0069 0.0029 -0.0869"
@@ -502,7 +502,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//LINK_HIP_ROLL_R.STL" />
+          filename="package://magicbot-z1_description/meshes//right_hip_roll_link.STL" />
       </geometry>
       <material
         name="">
@@ -516,20 +516,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//LINK_HIP_ROLL_R.STL" />
+          filename="package://magicbot-z1_description/meshes//right_hip_roll_link.STL" />
       </geometry>
     </collision> -->
   </link>
   <joint
-    name="JOINT_HIP_ROLL_R"
+    name="right_hip_roll_joint"
     type="revolute">
     <origin
       xyz="0 -0.053724 -0.045579"
       rpy="0 0 0" />
     <parent
-      link="LINK_HIP_PITCH_R" />
+      link="right_hip_pitch_link" />
     <child
-      link="LINK_HIP_ROLL_R" />
+      link="right_hip_roll_link" />
     <axis
       xyz="1 0 0" />
     <limit
@@ -539,7 +539,7 @@
       velocity="20" />
   </joint>
   <link
-    name="LINK_HIP_YAW_R">
+    name="right_hip_yaw_link">
     <inertial>
       <origin
         xyz="-0.0188 0.0027 -0.0763"
@@ -560,7 +560,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//LINK_HIP_YAW_R.STL" />
+          filename="package://magicbot-z1_description/meshes//right_hip_yaw_link.STL" />
       </geometry>
       <material
         name="">
@@ -574,20 +574,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//LINK_HIP_YAW_R.STL" />
+          filename="package://magicbot-z1_description/meshes//right_hip_yaw_link.STL" />
       </geometry>
     </collision> -->
   </link>
   <joint
-    name="JOINT_HIP_YAW_R"
+    name="right_hip_yaw_joint"
     type="revolute">
     <origin
       xyz="-0.00050599 0.0029213 -0.12555"
       rpy="0 0 0" />
     <parent
-      link="LINK_HIP_ROLL_R" />
+      link="right_hip_roll_link" />
     <child
-      link="LINK_HIP_YAW_R" />
+      link="right_hip_yaw_link" />
     <axis
       xyz="0 0 1" />
     <limit
@@ -597,7 +597,7 @@
       velocity="20" />
   </joint>
   <link
-    name="LINK_KNEE_PITCH_R">
+    name="right_knee_link">
     <inertial>
       <origin
         xyz="0.0009 0.0009 -0.101"
@@ -618,7 +618,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//LINK_KNEE_PITCH_R.STL" />
+          filename="package://magicbot-z1_description/meshes//right_knee_link.STL" />
       </geometry>
       <material
         name="">
@@ -632,20 +632,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//LINK_KNEE_PITCH_R.STL" />
+          filename="package://magicbot-z1_description/meshes//right_knee_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="JOINT_KNEE_PITCH_R"
+    name="right_knee_joint"
     type="revolute">
     <origin
       xyz="-0.052111 0 -0.13729"
       rpy="0 0 0" />
     <parent
-      link="LINK_HIP_YAW_R" />
+      link="right_hip_yaw_link" />
     <child
-      link="LINK_KNEE_PITCH_R" />
+      link="right_knee_link" />
     <axis
       xyz="0 1 0" />
     <limit
@@ -655,7 +655,7 @@
       velocity="20" />
   </joint>
   <link
-    name="LINK_ANKLE_PITCH_R">
+    name="right_ankle_pitch_link">
     <inertial>
       <origin
         xyz="0.0009 0 -0.0083"
@@ -676,7 +676,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//LINK_ANKLE_PITCH_R.STL" />
+          filename="package://magicbot-z1_description/meshes//right_ankle_pitch_link.STL" />
       </geometry>
       <material
         name="">
@@ -690,20 +690,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//LINK_ANKLE_PITCH_R.STL" />
+          filename="package://magicbot-z1_description/meshes//right_ankle_pitch_link.STL" />
       </geometry>
     </collision> -->
   </link>
   <joint
-    name="JOINT_ANKLE_PITCH_R"
+    name="right_ankle_pitch_joint"
     type="revolute">
     <origin
       xyz="0 0 -0.34"
       rpy="0 0 0" />
     <parent
-      link="LINK_KNEE_PITCH_R" />
+      link="right_knee_link" />
     <child
-      link="LINK_ANKLE_PITCH_R" />
+      link="right_ankle_pitch_link" />
     <axis
       xyz="0 1 0" />
     <limit
@@ -713,7 +713,7 @@
       velocity="15" />
   </joint>
   <link
-    name="LINK_ANKLE_ROLL_R">
+    name="right_ankle_roll_link">
     <inertial>
       <origin
         xyz="0.041294 -0.0010615 -0.031752"
@@ -734,7 +734,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//LINK_ANKLE_ROLL_R.STL" />
+          filename="package://magicbot-z1_description/meshes//right_ankle_roll_link.STL" />
       </geometry>
       <material
         name="">
@@ -748,7 +748,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//LINK_ANKLE_ROLL_R.STL" />
+          filename="package://magicbot-z1_description/meshes//right_ankle_roll_link.STL" />
       </geometry>
     </collision> -->
     <collision>
@@ -761,15 +761,15 @@
       </collision>
   </link>
   <joint
-    name="JOINT_ANKLE_ROLL_R"
+    name="right_ankle_roll_joint"
     type="revolute">
     <origin
       xyz="0 0 -0.018"
       rpy="0 0 0" />
     <parent
-      link="LINK_ANKLE_PITCH_R" />
+      link="right_ankle_pitch_link" />
     <child
-      link="LINK_ANKLE_ROLL_R" />
+      link="right_ankle_roll_link" />
     <axis
       xyz="1 0 0" />
     <limit
@@ -779,30 +779,30 @@
       velocity="15" />
   </joint>
 
-  <link name="LINK_FOOT_R">
+  <link name="right_foot_link">
     <inertial>
       <origin xyz="0.000000 0.000000 0.000000" rpy="0 0 0" />
       <mass value="1e-12" />
       <inertia ixx="1e-12" ixy="0.000000" ixz="0.000000" iyy="1e-12" iyz="0.000000" izz="1e-12" />
     </inertial>
   </link>
-  <joint name="J_FOOT_R" type="fixed">
+  <joint name="right_foot_joint" type="fixed">
     <origin xyz="0.000000 0.000000 -0.044760000" rpy="0 0 0" />
-    <parent link="LINK_ANKLE_ROLL_R" />
-    <child link="LINK_FOOT_R" />
+    <parent link="right_ankle_roll_link" />
+    <child link="right_foot_link" />
     <axis xyz="0 0 1" />
   </joint>
-  <link name="LINK_TOE_R">
+  <link name="right_toe_link">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <mass value="1e-12" />
       <inertia ixx="1e-12" ixy="0" ixz="0" iyy="1e-12" iyz="0" izz="1e-12" />
     </inertial>
   </link>
-  <joint name="JOINT_TOE_R" type="fixed" dont_collapse="true">
+  <joint name="right_toe_joint" type="fixed" dont_collapse="true">
     <origin xyz="0.152 0 0" rpy="0 0 0" />
-    <parent link="LINK_FOOT_R" />
-    <child link="LINK_TOE_R" />
+    <parent link="right_foot_link" />
+    <child link="right_toe_link" />
     <axis xyz="1 0 0" />
   </joint>
 
@@ -810,7 +810,7 @@
   <!-- ###########################  waist ################################-->  
   <!-- ###################################################################-->  
   <link
-    name="link_wy">
+    name="torso_link">
     <inertial>
       <origin
         xyz="0.0061 0.0003 0.1879"
@@ -831,7 +831,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//link_wy.STL" />
+          filename="package://magicbot-z1_description/meshes//torso_link.STL" />
       </geometry>
       <material
         name="">
@@ -845,12 +845,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//link_wy.STL" />
+          filename="package://magicbot-z1_description/meshes//torso_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="joint_wy"
+    name="waist_yaw_joint"
     type="fixed">
     <origin
       xyz="0 0 0.0619"
@@ -858,7 +858,7 @@
     <parent
       link="pelvis" />
     <child
-      link="link_wy" />
+      link="torso_link" />
     <axis
       xyz="0 0 1" />
     <limit
@@ -871,7 +871,7 @@
   <!-- ###########################  l_arm ################################-->  
   <!-- ###################################################################-->  
   <link
-    name="link_la1">
+    name="left_shoulder_pitch_link">
     <inertial>
       <origin
         xyz="0.0033 0.0422 -0.0117"
@@ -892,7 +892,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//link_la1.STL" />
+          filename="package://magicbot-z1_description/meshes//left_shoulder_pitch_link.STL" />
       </geometry>
       <material
         name="">
@@ -906,20 +906,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//link_la1.STL" />
+          filename="package://magicbot-z1_description/meshes//left_shoulder_pitch_link.STL" />
       </geometry>
     </collision> -->
   </link>
   <joint
-    name="joint_la1"
+    name="left_shoulder_pitch_joint"
     type="revolute">
     <origin
       xyz="0 0.11963 0.3208"
       rpy="0 0 0" />
     <parent
-      link="link_wy" />
+      link="torso_link" />
     <child
-      link="link_la1" />
+      link="left_shoulder_pitch_link" />
     <axis
       xyz="0 0.99255 -0.12187" />
     <limit
@@ -929,7 +929,7 @@
       velocity="14" />
   </joint>
   <link
-    name="link_la2">
+    name="left_shoulder_roll_link">
     <inertial>
       <origin
         xyz="-0.0006 0.0016 -0.0673"
@@ -950,7 +950,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//link_la2.STL" />
+          filename="package://magicbot-z1_description/meshes//left_shoulder_roll_link.STL" />
       </geometry>
       <material
         name="">
@@ -964,20 +964,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//link_la2.STL" />
+          filename="package://magicbot-z1_description/meshes//left_shoulder_roll_link.STL" />
       </geometry>
     </collision> -->
   </link>
   <joint
-    name="joint_la2"
+    name="left_shoulder_roll_joint"
     type="fixed">
     <origin
       xyz="0 0.047187 -0.013786"
       rpy="0 0 0" />
     <parent
-      link="link_la1" />
+      link="left_shoulder_pitch_link" />
     <child
-      link="link_la2" />
+      link="left_shoulder_roll_link" />
     <axis
       xyz="1 0 0" />
     <limit
@@ -987,7 +987,7 @@
       velocity="14" />
   </joint>
   <link
-    name="link_la3">
+    name="left_shoulder_yaw_link">
     <inertial>
       <origin
         xyz="0.0035409 -0.00073964 -0.044592"
@@ -1008,7 +1008,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//link_la3.STL" />
+          filename="package://magicbot-z1_description/meshes//left_shoulder_yaw_link.STL" />
       </geometry>
       <material
         name="">
@@ -1022,20 +1022,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//link_la3.STL" />
+          filename="package://magicbot-z1_description/meshes//left_shoulder_yaw_link.STL" />
       </geometry>
     </collision> -->
   </link>
   <joint
-    name="joint_la3"
+    name="left_shoulder_yaw_joint"
     type="fixed">
     <origin
       xyz="0 0 -0.1171"
       rpy="0 0 0" />
     <parent
-      link="link_la2" />
+      link="left_shoulder_roll_link" />
     <child
-      link="link_la3" />
+      link="left_shoulder_yaw_link" />
     <axis
       xyz="0 0 1" />
     <limit
@@ -1045,7 +1045,7 @@
       velocity="14" />
   </joint>
   <link
-    name="link_la4">
+    name="left_elbow_link">
     <inertial>
       <origin
         xyz="0.0447 -0.0015 -0.0086458"
@@ -1066,7 +1066,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//link_la4.STL" />
+          filename="package://magicbot-z1_description/meshes//left_elbow_link.STL" />
       </geometry>
       <material
         name="">
@@ -1080,20 +1080,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//link_la4.STL" />
+          filename="package://magicbot-z1_description/meshes//left_elbow_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="joint_la4"
+    name="left_elbow_joint"
     type="fixed">
     <origin
       xyz="0.01924 0 -0.0979"
       rpy="0 0 0" />
     <parent
-      link="link_la3" />
+      link="left_shoulder_yaw_link" />
     <child
-      link="link_la4" />
+      link="left_elbow_link" />
     <axis
       xyz="0 1 0" />
     <limit
@@ -1103,7 +1103,7 @@
       velocity="14" />
   </joint>
   <link
-    name="link_la5">
+    name="left_wrist_yaw_link">
     <inertial>
       <origin
         xyz="0.025808 0.00016898 0.00074869"
@@ -1124,7 +1124,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//link_la5.STL" />
+          filename="package://magicbot-z1_description/meshes//left_wrist_yaw_link.STL" />
       </geometry>
       <material
         name="">
@@ -1138,20 +1138,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//link_la5.STL" />
+          filename="package://magicbot-z1_description/meshes//left_wrist_yaw_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="joint_la5"
+    name="left_wrist_yaw_joint"
     type="fixed">
     <origin
       xyz="0.138 0 -0.017415"
       rpy="0 0 0" />
     <parent
-      link="link_la4" />
+      link="left_elbow_link" />
     <child
-      link="link_la5" />
+      link="left_wrist_yaw_link" />
     <axis
       xyz="1 0 0" />
     <limit
@@ -1161,17 +1161,17 @@
       velocity="14" />
   </joint>
 
-  <link name="LINK_HAND_L">
+  <link name="left_hand_palm_link">
     <inertial>
       <origin xyz="0.000000 0.000000 0.000000" rpy="0 0 0" />
       <mass value="1e-12" />
       <inertia ixx="1e-12" ixy="0.000000" ixz="0.000000" iyy="1e-12" iyz="0.000000" izz="1e-12" />
     </inertial>
   </link>
-  <joint name="J_HAND_L" type="fixed" dont_collapse="true">
+  <joint name="left_hand_palm_joint" type="fixed" dont_collapse="true">
     <origin xyz="0.138 0.000000 -0." rpy="0 0 0" />
-    <parent link="link_la5" />
-    <child link="LINK_HAND_L" />
+    <parent link="left_wrist_yaw_link" />
+    <child link="left_hand_palm_link" />
     <axis xyz="0 0 1" />
   </joint>
 
@@ -1179,7 +1179,7 @@
   <!-- ###########################  r_arm ################################-->  
   <!-- ###################################################################-->  
   <link
-    name="link_ra1">
+    name="right_shoulder_pitch_link">
     <inertial>
       <origin
         xyz="0.0032 -0.0422 -0.0117"
@@ -1200,7 +1200,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//link_ra1.STL" />
+          filename="package://magicbot-z1_description/meshes//right_shoulder_pitch_link.STL" />
       </geometry>
       <material
         name="">
@@ -1214,20 +1214,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//link_ra1.STL" />
+          filename="package://magicbot-z1_description/meshes//right_shoulder_pitch_link.STL" />
       </geometry>
     </collision> -->
   </link>
   <joint
-    name="joint_ra1"
+    name="right_shoulder_pitch_joint"
     type="revolute">
     <origin
       xyz="0 -0.11963 0.3208"
       rpy="0 0 0" />
     <parent
-      link="link_wy" />
+      link="torso_link" />
     <child
-      link="link_ra1" />
+      link="right_shoulder_pitch_link" />
     <axis
       xyz="0 0.99255 -0.12187" />
     <limit
@@ -1237,7 +1237,7 @@
       velocity="14" />
   </joint>
   <link
-    name="link_ra2">
+    name="right_shoulder_roll_link">
     <inertial>
       <origin
         xyz="-0.0005 -0.0016 -0.0678"
@@ -1258,7 +1258,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//link_ra2.STL" />
+          filename="package://magicbot-z1_description/meshes//right_shoulder_roll_link.STL" />
       </geometry>
       <material
         name="">
@@ -1272,20 +1272,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//link_ra2.STL" />
+          filename="package://magicbot-z1_description/meshes//right_shoulder_roll_link.STL" />
       </geometry>
     </collision> -->
   </link>
   <joint
-    name="joint_ra2"
+    name="right_shoulder_roll_joint"
     type="fixed">
     <origin
       xyz="0 -0.047187 -0.013786"
       rpy="0 0 0" />
     <parent
-      link="link_ra1" />
+      link="right_shoulder_pitch_link" />
     <child
-      link="link_ra2" />
+      link="right_shoulder_roll_link" />
     <axis
       xyz="1 0 0" />
     <limit
@@ -1295,7 +1295,7 @@
       velocity="14" />
   </joint>
   <link
-    name="link_ra3">
+    name="right_shoulder_yaw_link">
     <inertial>
       <origin
         xyz="0.0035415 0.0007384 -0.044591"
@@ -1316,7 +1316,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//link_ra3.STL" />
+          filename="package://magicbot-z1_description/meshes//right_shoulder_yaw_link.STL" />
       </geometry>
       <material
         name="">
@@ -1330,20 +1330,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//link_ra3.STL" />
+          filename="package://magicbot-z1_description/meshes//right_shoulder_yaw_link.STL" />
       </geometry>
     </collision> -->
   </link>
   <joint
-    name="joint_ra3"
+    name="right_shoulder_yaw_joint"
     type="fixed">
     <origin
       xyz="0 0 -0.1171"
       rpy="0 0 0" />
     <parent
-      link="link_ra2" />
+      link="right_shoulder_roll_link" />
     <child
-      link="link_ra3" />
+      link="right_shoulder_yaw_link" />
     <axis
       xyz="0 0 1" />
     <limit
@@ -1353,7 +1353,7 @@
       velocity="14" />
   </joint>
   <link
-    name="link_ra4">
+    name="right_elbow_link">
     <inertial>
       <origin
         xyz="0.0447 0.0015 -0.0087"
@@ -1374,7 +1374,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//link_ra4.STL" />
+          filename="package://magicbot-z1_description/meshes//right_elbow_link.STL" />
       </geometry>
       <material
         name="">
@@ -1388,20 +1388,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//link_ra4.STL" />
+          filename="package://magicbot-z1_description/meshes//right_elbow_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="joint_ra4"
+    name="right_elbow_joint"
     type="fixed">
     <origin
       xyz="0.01924 0 -0.0979"
       rpy="0 0 0" />
     <parent
-      link="link_ra3" />
+      link="right_shoulder_yaw_link" />
     <child
-      link="link_ra4" />
+      link="right_elbow_link" />
     <axis
       xyz="0 1 0" />
     <limit
@@ -1411,7 +1411,7 @@
       velocity="14" />
   </joint>
   <link
-    name="link_ra5">
+    name="right_wrist_yaw_link">
     <inertial>
       <origin
         xyz="0.025808 -0.0001686 0.00074876"
@@ -1432,7 +1432,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//link_ra5.STL" />
+          filename="package://magicbot-z1_description/meshes//right_wrist_yaw_link.STL" />
       </geometry>
       <material
         name="">
@@ -1446,20 +1446,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//link_ra5.STL" />
+          filename="package://magicbot-z1_description/meshes//right_wrist_yaw_link.STL" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="joint_ra5"
+    name="right_wrist_yaw_joint"
     type="fixed">
     <origin
       xyz="0.138 0 -0.017415"
       rpy="0 0 0" />
     <parent
-      link="link_ra4" />
+      link="right_elbow_link" />
     <child
-      link="link_ra5" />
+      link="right_wrist_yaw_link" />
     <axis
       xyz="1 0 0" />
     <limit
@@ -1469,17 +1469,17 @@
       velocity="14" />
   </joint>
 
-  <link name="LINK_HAND_R">
+  <link name="right_hand_palm_link">
     <inertial>
       <origin xyz="0.000000 0.000000 0.000000" rpy="0 0 0" />
       <mass value="1e-12" />
       <inertia ixx="1e-12" ixy="0.000000" ixz="0.000000" iyy="1e-12" iyz="0.000000" izz="1e-12" />
     </inertial>
   </link>
-  <joint name="J_HAND_R" type="fixed" dont_collapse="true">
+  <joint name="right_hand_palm_joint" type="fixed" dont_collapse="true">
     <origin xyz="0.138 0.000000 0.0" rpy="0 0 0" />
-    <parent link="link_ra5" />
-    <child link="LINK_HAND_R" />
+    <parent link="right_wrist_yaw_link" />
+    <child link="right_hand_palm_link" />
     <axis xyz="0 0 1" />
   </joint>
   
@@ -1487,7 +1487,7 @@
   <!-- ###########################  head  ################################-->  
   <!-- ###################################################################-->  
   <link
-    name="link_hy">
+    name="head_link">
     <inertial>
       <origin
         xyz="0.0079 -0.0004 0.0262"
@@ -1508,7 +1508,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//link_hy.STL" />
+          filename="package://magicbot-z1_description/meshes//head_link.STL" />
       </geometry>
       <material
         name="">
@@ -1522,20 +1522,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://magicbot-z1_description/meshes//link_hy.STL" />
+          filename="package://magicbot-z1_description/meshes//head_link.STL" />
       </geometry>
     </collision> -->
   </link>
   <joint
-    name="joint_hy"
+    name="head_joint"
     type="fixed" dont_collapse="true">
     <origin
       xyz="0 0 0.4889"
       rpy="0 0 0" />
     <parent
-      link="link_wy" />
+      link="torso_link" />
     <child
-      link="link_hy" />
+      link="head_link" />
     <axis
       xyz="0 0 1" />
     <limit

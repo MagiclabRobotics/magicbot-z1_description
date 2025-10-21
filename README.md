@@ -15,30 +15,30 @@ Magicbot-Z1 Humanoid have 24 joints:
 
 ```text
 root [⚓] => /pelvis/
-    JOINT_HIP_PITCH_L [⚙+Y] => /LINK_HIP_PITCH_L/
-        JOINT_HIP_ROLL_L [⚙+X] => /LINK_HIP_ROLL_L/
-            JOINT_HIP_YAW_L [⚙+Z] => /LINK_HIP_PITCH_L/
-                JOINT_KNEE_PITCH_L [⚙+Y] => /LINK_KNEE_PITCH_L/
-                    JOINT_ANKLE_PITCH_L [⚙+Y] => /LINK_ANKLE_PITCH_L/
-                        JOINT_ANKLE_ROLL_L [⚙+X] => /LINK_ANKLE_ROLL_L/
-    JOINT_HIP_PITCH_R [⚙+Y] => /LINK_HIP_PITCH_R/
-        JOINT_HIP_ROLL_R [⚙+X] => /LINK_HIP_ROLL_R/
-            JOINT_HIP_YAW_R [⚙+Z] => /LINK_HIP_YAW_R/
-                JOINT_KNEE_PITCH_R [⚙+Y] => /LINK_KNEE_PITCH_R/
-                    JOINT_ANKLE_PITCH_R [⚙+Y] => /LINK_ANKLE_PITCH_R/
-                        JOINT_ANKLE_ROLL_R [⚙+X] => /LINK_ANKLE_ROLL_R/
-    joint_wy [⚙+Z] => /link_wy/
-        joint_hy [⚙+Z] => /link_hy/
-        joint_la1 [⚙+Y] => /link_la1/
-            joint_la2 [⚙+X] => /link_la2/
-                joint_la3 [⚙+Z] => /link_la3/
-                    joint_la4 [⚙+X] => /joint_la4/
-                        joint_la5 [⚙+Z] => /link_la5/
-        joint_ra1 [⚙+Y] => /link_ra1/
-            joint_ra2 [⚙+X] => /link_ra2/
-                joint_ra3 [⚙+Z] => /joint_ra3/
-                    joint_ra4 [⚙+X] => /link_ra4/
-                        joint_ra5 [⚙+Z] => /link_ra5/
+    left_hip_pitch_joint [⚙+Y] => /left_hip_pitch_link/
+        left_hip_roll_joint [⚙+X] => /left_hip_roll_link/
+            left_hip_yaw_joint [⚙+Z] => /left_hip_pitch_link/
+                left_knee_joint [⚙+Y] => /left_knee_link/
+                    left_ankle_pitch_joint [⚙+Y] => /left_ankle_pitch_link/
+                        left_ankle_roll_joint [⚙+X] => /left_ankle_roll_link/
+    right_hip_pitch_joint [⚙+Y] => /right_hip_pitch_link/
+        right_hip_roll_joint [⚙+X] => /right_hip_roll_link/
+            right_hip_yaw_joint [⚙+Z] => /right_hip_yaw_link/
+                right_knee_joint [⚙+Y] => /right_knee_link/
+                    right_ankle_pitch_joint [⚙+Y] => /right_ankle_pitch_link/
+                        right_ankle_roll_joint [⚙+X] => /right_ankle_roll_link/
+    waist_yaw_joint [⚙+Z] => /torso_link/
+        head_joint [⚙+Z] => /head_link/
+        left_shoulder_pitch_joint [⚙+Y] => /left_shoulder_pitch_link/
+            left_shoulder_roll_joint [⚙+X] => /left_shoulder_roll_link/
+                left_shoulder_yaw_joint [⚙+Z] => /left_shoulder_yaw_link/
+                    left_elbow_joint [⚙+X] => /left_elbow_joint/
+                        left_wrist_yaw_joint [⚙+Z] => /left_wrist_yaw_link/
+        right_shoulder_pitch_joint [⚙+Y] => /right_shoulder_pitch_link/
+            right_shoulder_roll_joint [⚙+X] => /right_shoulder_roll_link/
+                right_shoulder_yaw_joint [⚙+Z] => /right_shoulder_yaw_joint/
+                    right_elbow_joint [⚙+X] => /right_elbow_link/
+                        right_wrist_yaw_joint [⚙+Z] => /right_wrist_yaw_link/
 ```
 ## Usages
 
