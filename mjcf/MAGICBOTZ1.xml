@@ -1,5 +1,5 @@
 <mujoco model="MagicLabZ1Humanoid">
-    <compiler angle="radian" meshdir="../meshes/" />
+    <compiler angle="radian" meshdir="../meshes/" eulerseq="xyz" />
     <size njmax="500" nconmax="100" />
     <asset>
         <mesh name="pelvis" file="pelvis.STL" />
@@ -135,38 +135,31 @@
             </body>
             <body name="link_wy" pos="0 0 0.0619">
                 <inertial pos="0.0061 0.0003 0.1879" quat="0.999977 0 0.00682264 0" mass="9.8779" diaginertia="0.15562 0.1368 0.0456795" />
-                <joint name="joint_wy" pos="0 0 0" axis="0 0 1" limited="true" range="-2.79 2.79" />
                 <geom type="mesh" contype="0" conaffinity="0" group="1" rgba="0.75294 0.75294 0.75294 1" mesh="link_wy" />
                 <geom type="mesh" rgba="0.75294 0.75294 0.75294 1" mesh="link_wy" />
                 <body name="link_hy" pos="0 0 0.4889">
                     <inertial pos="0.0079 -0.0004 0.0262" quat="0.707107 0 0 0.707107" mass="0.7987" diaginertia="0.0022 0.0017 0.0017" />
-                    <joint name="joint_hy" pos="0 0 0" axis="0 0 1" limited="true" range="-0.6981 0.6981" />
                     <geom type="mesh" contype="0" conaffinity="0" group="1" rgba="0.75294 0.75294 0.75294 1" mesh="link_hy" />
                     <geom type="mesh" rgba="0.75294 0.75294 0.75294 1" mesh="link_hy" />
                 </body>
-                <body name="link_la1" pos="0 0.11963 0.3208">
+                <body name="link_la1" pos="0 0.11963 0.3208" euler="0 0.2 0">
                     <inertial pos="0.0033 0.0422 -0.0117" quat="0.83147 0.55557 0 0" mass="0.8939" diaginertia="0.001 0.000941421 0.000658579" />
-                    <joint name="joint_la1" pos="0 0 0" axis="0 0.992546 -0.12187" limited="true" range="-2.88 2.88" />
                     <geom type="mesh" contype="0" conaffinity="0" group="1" rgba="0.75294 0.75294 0.75294 1" mesh="link_la1" />
                     <geom type="mesh" rgba="0.75294 0.75294 0.75294 1" mesh="link_la1" />
-                    <body name="link_la2" pos="0 0.047187 -0.013786">
+                    <body name="link_la2" pos="0 0.047187 -0.013786" euler="0.15 0 0">
                         <inertial pos="-0.0006 0.0016 -0.0673" quat="0.707107 0 0 0.707107" mass="0.7787" diaginertia="0.0013 0.0012 0.0007" />
-                        <joint name="joint_la2" pos="0 0 0" axis="1 0 0" limited="true" range="-0.175 2.2515" />
                         <geom type="mesh" contype="0" conaffinity="0" group="1" rgba="0.75294 0.75294 0.75294 1" mesh="link_la2" />
                         <geom type="mesh" rgba="0.75294 0.75294 0.75294 1" mesh="link_la2" />
                         <body name="link_la3" pos="0 0 -0.1171">
                             <inertial pos="0.0035409 -0.00073964 -0.044592" quat="0.99329 0 -0.115653 0" mass="0.35928" diaginertia="0.000923607 0.0008 0.000476393" />
-                            <joint name="joint_la3" pos="0 0 0" axis="0 0 1" limited="true" range="-2.618 2.618" />
                             <geom type="mesh" contype="0" conaffinity="0" group="1" rgba="0.75294 0.75294 0.75294 1" mesh="link_la3" />
                             <geom type="mesh" rgba="0.75294 0.75294 0.75294 1" mesh="link_la3" />
-                            <body name="link_la4" pos="0.01924 0 -0.0979">
+                            <body name="link_la4" pos="0.01924 0 -0.0979" euler="0 1 0">
                                 <inertial pos="0.0447 -0.0015 -0.0086458" quat="0.418542 0.595366 0.484402 0.485507" mass="1.48" diaginertia="0.00460603 0.00450553 0.00108844" />
-                                <joint name="joint_la4" pos="0 0 0" axis="0 1 0" limited="true" range="-0.96 2.0944" />
                                 <geom type="mesh" contype="0" conaffinity="0" group="1" rgba="0.75294 0.75294 0.75294 1" mesh="link_la4" />
                                 <geom type="mesh" rgba="0.75294 0.75294 0.75294 1" mesh="link_la4" />
                                 <body name="link_la5" pos="0.138 0 -0.017415">
                                     <inertial pos="0.025808 0.00016898 0.00074869" quat="0.5 0.5 0.5 0.5" mass="0.2728" diaginertia="0.0003 0.0003 0.0002" />
-                                    <joint name="joint_la5" pos="0 0 0" axis="1 0 0" limited="true" range="-2.618 2.618" />
                                     <geom type="mesh" contype="0" conaffinity="0" group="1" rgba="0.75294 0.75294 0.75294 1" mesh="link_la5" />
                                     <geom type="mesh" rgba="0.75294 0.75294 0.75294 1" mesh="link_la5" />
                                 </body>
@@ -174,29 +167,24 @@
                         </body>
                     </body>
                 </body>
-                <body name="link_ra1" pos="0 -0.11963 0.3208">
+                <body name="link_ra1" pos="0 -0.11963 0.3208" euler="0 0.2 0">
                     <inertial pos="0.0032 -0.0422 -0.0117" quat="0.55557 0.83147 0 0" mass="0.8976" diaginertia="0.001 0.000941421 0.000658579" />
-                    <joint name="joint_ra1" pos="0 0 0" axis="0 0.992546 -0.12187" limited="true" range="-2.88 2.88" />
                     <geom type="mesh" contype="0" conaffinity="0" group="1" rgba="0.75294 0.75294 0.75294 1" mesh="link_ra1" />
                     <geom type="mesh" rgba="0.75294 0.75294 0.75294 1" mesh="link_ra1" />
-                    <body name="link_ra2" pos="0 -0.047187 -0.013786">
+                    <body name="link_ra2" pos="0 -0.047187 -0.013786" euler="-0.15 0 0">
                         <inertial pos="-0.0005 -0.0016 -0.0678" quat="0.707107 0 0 0.707107" mass="0.7868" diaginertia="0.0013 0.0012 0.0007" />
-                        <joint name="joint_ra2" pos="0 0 0" axis="1 0 0" limited="true" range="-2.2515 0.175" />
                         <geom type="mesh" contype="0" conaffinity="0" group="1" rgba="0.75294 0.75294 0.75294 1" mesh="link_ra2" />
                         <geom type="mesh" rgba="0.75294 0.75294 0.75294 1" mesh="link_ra2" />
                         <body name="link_ra3" pos="0 0 -0.1171">
                             <inertial pos="0.0035415 0.0007384 -0.044591" quat="0.99329 0 -0.115653 0" mass="0.3593" diaginertia="0.000923607 0.0008 0.000476393" />
-                            <joint name="joint_ra3" pos="0 0 0" axis="0 0 1" limited="true" range="-2.618 2.618" />
                             <geom type="mesh" contype="0" conaffinity="0" group="1" rgba="0.75294 0.75294 0.75294 1" mesh="link_ra3" />
                             <geom type="mesh" rgba="0.75294 0.75294 0.75294 1" mesh="link_ra3" />
-                            <body name="link_ra4" pos="0.01924 0 -0.0979">
+                            <body name="link_ra4" pos="0.01924 0 -0.0979" euler="0 1 0">
                                 <inertial pos="0.0447 0.0015 -0.0087" quat="0.418542 0.595366 0.484402 0.485507" mass="1.48" diaginertia="0.00460603 0.00450553 0.00108844" />
-                                <joint name="joint_ra4" pos="0 0 0" axis="0 1 0" limited="true" range="-0.96 2.0944" />
                                 <geom type="mesh" contype="0" conaffinity="0" group="1" rgba="0.75294 0.75294 0.75294 1" mesh="link_ra4" />
                                 <geom type="mesh" rgba="0.75294 0.75294 0.75294 1" mesh="link_ra4" />
                                 <body name="link_ra5" pos="0.138 0 -0.017415">
                                     <inertial pos="0.025808 -0.0001686 0.00074876" quat="0.5 0.5 0.5 0.5" mass="0.27279" diaginertia="0.0003 0.0003 0.0002" />
-                                    <joint name="joint_ra5" pos="0 0 0" axis="1 0 0" limited="true" range="-2.618 2.618" />
                                     <geom type="mesh" contype="0" conaffinity="0" group="1" rgba="0.75294 0.75294 0.75294 1" mesh="link_ra5" />
                                     <geom type="mesh" rgba="0.75294 0.75294 0.75294 1" mesh="link_ra5" />
                                 </body>
@@ -227,28 +215,6 @@
         <motor name="right_knee_actuator" joint="JOINT_KNEE_PITCH_R"/>
         <motor name="right_ankle_pitch_actuator" joint="JOINT_ANKLE_PITCH_R"/>
         <motor name="right_ankle_roll_actuator" joint="JOINT_ANKLE_ROLL_R"/>
-
-        <!-- <motor name="wrist_roll_actuator" joint="joint_wr"/> -->
-        <motor name="wrist_yaw_actuator" joint="joint_wy"/>
-
-        <motor name="head_yaw_actuator" joint="joint_hy"/>
-        <!-- <motor name="head_pitch_actuator" joint="joint_hp"/> -->
-
-        <motor name="left_shoulder_pitch_actuator" joint="joint_la1"/>
-        <motor name="left_shoulder_roll_actuator" joint="joint_la2"/>
-        <motor name="left_shoulder_yaw_actuator" joint="joint_la3"/>
-        <motor name="left_elbow_actuator" joint="joint_la4"/>
-        <motor name="left_hand_yaw_actuator" joint="joint_la5"/>
-        <!-- <motor name="left_hand_roll_actuator" joint="joint_la6"/> -->
-        <!-- <motor name="left_hand_pitch_actuator" joint="joint_la7"/> -->
-
-        <motor name="right_shoulder_pitch_actuator" joint="joint_ra1"/>
-        <motor name="right_shoulder_roll_actuator" joint="joint_ra2"/>
-        <motor name="right_shoulder_yaw_actuator" joint="joint_ra3"/>
-        <motor name="right_elbow_actuator" joint="joint_ra4"/>
-        <motor name="right_hand_yaw_actuator" joint="joint_ra5"/>
-        <!-- <motor name="right_hand_roll_actuator" joint="joint_ra5"/>
-        <motor name="right_hand_pitch_actuator" joint="joint_ra5"/> -->
   </actuator>
 
   <sensor>
